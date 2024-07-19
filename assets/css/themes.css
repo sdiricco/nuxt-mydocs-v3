@@ -1,5 +1,6 @@
 html {
     color-scheme: light;
+    font-family: 'Inter';
 }
 
 html.dark {
@@ -790,7 +791,7 @@ html.dark {
     --border: 220 13% 91%;
     --input: 220 13% 91%;
 
-    --primary: 262.1 83.3% 57.8%;
+    --primary: 158.6 100% 3.1%;
     --primary-foreground: 210 20% 98%;
 
     --secondary: 220 14.3% 95.9%;
@@ -808,23 +809,23 @@ html.dark {
 }
 
 .theme-myTheme.dark {
-    --background: 224 71.4% 4.1%;
+    --background: 222.24 48.2% 11.2%;
     --foreground: 210 20% 98%;
 
     --muted: 215 27.9% 16.9%;
     --muted-foreground: 217.9 10.6% 64.9%;
 
-    --popover: 224 71.4% 4.1%;
+    --popover: 222.24 48.2% 11.2%;
     --popover-foreground: 210 20% 98%;
 
-    --card: 224 71.4% 4.1%;
+    --card: 222.24 48.2% 11.2%;
     --card-foreground: 210 20% 98%;
 
     --border: 215 27.9% 16.9%;
     --input: 215 27.9% 16.9%;
 
-    --primary: 263.4 70% 50.4%;
-    --primary-foreground: 210 20% 98%;
+    --primary: 158.6 100% 43.1%;
+    --primary-foreground: 210 20% 0%;
 
     --secondary: 215 27.9% 16.9%;
     --secondary-foreground: 210 20% 98%;

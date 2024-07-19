@@ -10,11 +10,11 @@
     </div>
     <div class="space-y-1.5">
       <UiLabel>Color</UiLabel>
-      <div class="grid grid-cols-3 gap-2">
+      <div class="grid grid-cols-2 gap-2">
         <template v-for="color in allColors" :key="color">
-          <UiButton class="justify-start gap-2" variant="outline"
+          <UiButton class="justify-start gap-2 w-full" variant="outline"
             :class="{ 'border-primary border-2': theme === color }" @click="setTheme(color)">
-            <span class="h-5 w-5 flex items-center justify-center rounded-full"
+            <span class="min-h-5 min-w-5 h-5 w-5 flex items-center justify-center rounded-full"
               :style="{ backgroundColor: backgroundColor(color) }">
               <Icon v-if="theme === color" name="lucide:check" size="16" class="text-white" />
             </span>
@@ -78,7 +78,6 @@ const allColors: Color[] = [
   'gray',
   'neutral',
   'yellow',
-  'violet',
   'myTheme'
 ];
 

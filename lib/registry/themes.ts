@@ -635,8 +635,8 @@ export const themes = [
     name: 'myTheme',
     label: 'myTheme',
     activeColor: {
-      light: '262.1 83.3% 57.8%',
-      dark: '263.4 70% 50.4%',
+      light: '158.6 100% 43.1%',
+      dark: '158.6 100% 43.1%',
     },
     cssVars: {
       light: {
@@ -661,13 +661,13 @@ export const themes = [
         'ring': '262.1 83.3% 57.8%',
       },
       dark: {
-        'background': '224 71.4% 4.1%',
+        'background': '222.24 48.2% 11.2%',
         'foreground': '210 20% 98%',
-        'card': '224 71.4% 4.1%',
+        'card': '222.24 48.2% 11.2%',
         'card-foreground': '210 20% 98%',
-        'popover': '224 71.4% 4.1%',
+        'popover': '222.24 48.2% 11.2%',
         'popover-foreground': '210 20% 98%',
-        'primary': '263.4 70% 50.4%',
+        'primary': '158.6 100% 43.1%',
         'primary-foreground': '210 20% 98%',
         'secondary': '215 27.9% 16.9%',
         'secondary-foreground': '210 20% 98%',
@@ -679,8 +679,9 @@ export const themes = [
         'destructive-foreground': '210 20% 98%',
         'border': '215 27.9% 16.9%',
         'input': '215 27.9% 16.9%',
-        'ring': '263.4 70% 50.4%',
-      },
+        'ring': '263.4 70% 50.4%'
+      }
+
     },
   },
 ] as const;

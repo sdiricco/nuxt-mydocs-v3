@@ -9,7 +9,24 @@ export default defineNuxtConfig({
     '@nuxt/image',
     '@nuxt/icon',
     '@nuxtjs/color-mode',
+    "@nuxtjs/google-fonts"
   ],
+  googleFonts: {
+    families: {
+      Roboto: true,
+      'Josefin+Sans': true,
+      Lato: [400, 600],
+      Raleway: {
+        wght: [100, 400],
+        ital: [100]
+      },
+      Inter: '200..700',
+      'Crimson Pro': {
+        wght: '200..900',
+        ital: '200..700',
+      }
+    }
+  },
   shadcn: {
     /**
      * Prefix for all the imported component
