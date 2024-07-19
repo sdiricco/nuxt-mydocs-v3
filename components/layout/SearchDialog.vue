@@ -21,7 +21,7 @@
               :id="i"
               :key="item.id"
               :to="item.id"
-              class="flex p-2 hover:bg-muted hover:cursor-pointer rounded-md select-none"
+              class="flex p-2 hover:bg-muted hover:cursor-pointer rounded-md select-none cursor-pointer"
               :class="[i === activeSelect && 'bg-muted']"
               @click="open = false; activeSelect = i;"
             >
@@ -47,7 +47,7 @@
             <template v-for="item in navigation" :key="item._path">
               <UiCommandGroup v-if="item.children" :heading="item.title" class="p-1.5">
                 <NuxtLink v-for="child in item.children" :key="child.id" :to="child._path">
-                  <UiCommandItem :value="child._path">
+                  <UiCommandItem :value="child._path" class="cursor-pointer">
                     <Icon v-if="child.icon" :name="child.icon" class="h-4 w-4 mr-2" />
                     <div v-else class="h-4 w-4 mr-2" />
                     <span>{{ child.title }}</span>

@@ -4,9 +4,10 @@
       <template v-for="(breadcrumb, index) in breadcrumbs" :key="breadcrumb.title">
         <UiBreadcrumbItem>
           <UiBreadcrumbLink
-            class="capitalize"
-            :href="index === 0 ? undefined : breadcrumb.href"
+            class="capitalize cursor-pointer"
+            :href="breadcrumb.href"
             :class="{ 'text-foreground': index === breadcrumbs.length - 1 }"
+            @click="onBreadCrumb(breadcrumb.href)"
           >
             {{ breadcrumb.title }}
           </UiBreadcrumbLink>
@@ -37,6 +38,10 @@ function generateBreadcrumb(url: string): Item[] {
     breadcrumbItems.push({ title: segment, href });
   }
   return breadcrumbItems;
+}
+
+function onBreadCrumb(href: string) {
+  console.log(href)
 }
 
 const breadcrumbs = computed(() => generateBreadcrumb(route.path));
