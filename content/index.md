@@ -7,7 +7,7 @@ navigation: false
 ---
 actions:
   - name: Get Started
-    to: /getting-started
+    to: /frontend
   - name: GitHub
     variant: outline
     to: https://github.com/ZTL-UwU/shadcn-docs-nuxt

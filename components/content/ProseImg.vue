@@ -5,6 +5,7 @@
     :width="width"
     :height="height"
     class="[&:not(:first-child)]:mt-8 [&:not(:last-child)]:mb-8"
+    placeholder="https://placehold.co/1200x600?text=..."
   />
 </template>
 
@@ -40,3 +41,5 @@ defineProps({
 //   return props.src;
 // });
 </script>
+
+<style scoped></style>
