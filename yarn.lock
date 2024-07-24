@@ -898,6 +898,20 @@
   dependencies:
     "@iconify/types" "*"
 
+"@iconify-json/ph@^1.1.13":
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/@iconify-json/ph/-/ph-1.1.13.tgz#242b1fcde91d3ca7ef64372475521dce41b047ac"
+  integrity sha512-xtM4JJ63HCKj09WRqrBswXiHrpliBlqboWSZH8odcmqYXbvIFceU9/Til4V+MQr6+MoUC+KB72cxhky2+A6r/g==
+  dependencies:
+    "@iconify/types" "*"
+
+"@iconify-json/vscode-icons@^1.1.36":
+  version "1.1.36"
+  resolved "https://registry.yarnpkg.com/@iconify-json/vscode-icons/-/vscode-icons-1.1.36.tgz#371f537694f61ed9c433f1769d89ca4ea9263642"
+  integrity sha512-gObMrGZJhxeqhmjoW8rJ85HDUnssl2GwEPVd+9+Zk+/USagyKz75MgMGGomsho+XhYWlrA1IRgs2OyrFGELuUA==
+  dependencies:
+    "@iconify/types" "*"
+
 "@iconify/collections@^1.0.440":
   version "1.0.441"
   resolved "https://registry.yarnpkg.com/@iconify/collections/-/collections-1.0.441.tgz#abd29316a68183b6efd5944faf42f163de4af2f3"

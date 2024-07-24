@@ -1,6 +1,6 @@
 <template>
   <NuxtImg
-    :src="refinedSrc"
+    :src="src"
     :alt="alt"
     :width="width"
     :height="height"
@@ -9,10 +9,10 @@
 </template>
 
 <script setup lang="ts">
-import { joinURL, withLeadingSlash, withTrailingSlash } from 'ufo';
-import { computed, useRuntimeConfig } from '#imports';
+// import { joinURL, withLeadingSlash, withTrailingSlash } from 'ufo';
+// import { computed, useRuntimeConfig } from '#imports';
 
-const props = defineProps({
+defineProps({
   src: {
     type: String,
     default: '',
@@ -31,12 +31,12 @@ const props = defineProps({
   },
 });
 
-const refinedSrc = computed(() => {
-  if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
-    const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL));
-    if (_base !== '/' && !props.src.startsWith(_base))
-      return joinURL(_base, props.src);
-  }
-  return props.src;
-});
+// const refinedSrc = computed(() => {
+//   if (props.src?.startsWith('/') && !props.src.startsWith('//')) {
+//     const _base = withLeadingSlash(withTrailingSlash(useRuntimeConfig().app.baseURL));
+//     if (_base !== '/' && !props.src.startsWith(_base))
+//       return joinURL(_base, props.src);
+//   }
+//   return props.src;
+// });
 </script>

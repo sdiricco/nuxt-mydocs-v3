@@ -5,10 +5,6 @@ navigation: false
 
 ::hero
 ---
-announcement:
-  title: 'Release v0.4.1'
-  icon: 'noto:party-popper'
-  to: /getting-started/changelog
 actions:
   - name: Get Started
     to: /getting-started
@@ -24,5 +20,4 @@ Effortless and Beautiful<br>Docs Template.
 #description
 Beautifully designed Nuxt Content template built with shadcn-vue.<br>Customizable. Compatible. Open Source.
 ::
-
 
