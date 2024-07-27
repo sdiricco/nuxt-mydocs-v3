@@ -74,18 +74,7 @@ export default defineAppConfig({
     },
     footer: {
       credits: 'Copyright © 2024',
-      links: [
-        {
-          title: 'shadcn-vue',
-          to: 'https://www.shadcn-vue.com/',
-          target: '_blank',
-        },
-        {
-          icon: 'lucide:github',
-          to: 'https://github.com/ZTL-UwU/shadcn-docs-nuxt',
-          target: '_blank',
-        },
-      ],
+      links: [],
     },
     toc: {
       enable: true,
