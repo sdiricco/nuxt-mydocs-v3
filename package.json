@@ -9,6 +9,9 @@
     "type": "git",
     "url": "git+https://github.com/ZTL-UwU/shadcn-docs-nuxt.git"
   },
+  "engines": {
+    "node": "20.11.0"
+  },
   "bugs": "https://github.com/ZTL-UwU/shadcn-docs-nuxt/issues",
   "main": "./nuxt.config.ts",
   "files": [
