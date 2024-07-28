@@ -1,11 +1,18 @@
-# Python
+---
+title: Python
+description: 
+icon: 'ph:code-bold'
+---
 
-# Lezione 01
+Per fare pratica con python puoi utilizzare [Programmiz](https://www.programiz.com/)
+
+::prose-iframe{src="https://www.programiz.com/python-programming/online-compiler/"}
+::
 
 ## Prerequisiti 
 Conoscenza di un linguaggio qualsiasi OOP come C++ o Javascript
 
-## Corso Python
+## Introduzione
 
 Python :tada: è un linguaggio di programmazione di più "alto livello" rispetto alla maggior parte degli altri linguaggi, orientato a oggetti, adatto, tra gli altri usi, a sviluppare applicazioni distribuite, scripting, computazione numerica e system testing.
 
@@ -29,16 +36,15 @@ sudo apt-get install python3-pip
 
 Per verificare la corretta installazione dell'interprete python digitare da terminale `python3`. In questo modo apriremo inoltre la shell interattiva di python in cui sarà possibile inserire direttamente del codice ed avere una risposta simultanea 
 
-![](./images/install-python.gif)
+![](/images/python/install-python.gif)
 
 ## Configurazione di un IDE
 
 Un ottimo ambiente di sviluppo per Python è [Pycharm](https://www.jetbrains.com/pycharm/download/).<br>
 Per questo corso ho preferito non utilizzare un IDE specifico come Pycharm ma uno con un target più ad uso generale come [Visual Studio Code](https://code.visualstudio.com/) con l'ausilio di un'estensione che possa supportare gli emmet (abbreviazioni intelligenti) per il linguaggio python e opzioni per il debug del codice. L'estension che ho installato si chiama *Python* ed è quella che riporto nell'immagine animata qua sotto.
 
-![](./images/python-extension-vscode.gif)
+![](/images/python/python-extension-vscode.gif)
 
-# Lezione 02
 
 ## Primo script
 
@@ -51,7 +57,7 @@ Ecco l'esecuzione del primo script python
 print('ciao mondo')
 ```
 
-![](./images/ciao-mondo-python.gif)
+![](/images/python/ciao-mondo-python.gif)
 
 ## Aggiunta di moduli
 
@@ -69,9 +75,8 @@ pip install PyPDF2
 
 Qualora si avessero dubbi sul nome del modulo o sul comando esatto, niente paura, il browser ci è di supporto
 
-![](./images/pip-install.gif)ù
+![](/images/python/pip-install.gif)ù
 
-# Lezione 03
 
 ## Introduzione a webbrowser
 
@@ -92,7 +97,7 @@ destinazione = input()
 webbrowser.open('https://www.google.com/maps' + '/place/' + destinazione)
 ```
 
-![](./images/maps-script.gif)
+![](/images/python/maps-script.gif)
 
 E' possibile ridurre ancora il codice
 
@@ -121,7 +126,7 @@ webbrowser.open('https://www.google.com/maps' + '/place/' + input())
 
 E' sufficiente rendere il file *eseguibile* (all'interno delle proprietà del file sezione "permessi") e lanciarlo da terminale.
 
-![](./images/python-executable-linux.gif)
+![](/images/python/python-executable-linux.gif)
 
 ## Commenti 
 
@@ -129,8 +134,6 @@ E' sufficiente rendere il file *eseguibile* (all'interno delle proprietà del fi
 # questo è un commento e verrà ignorato dall'interprete
 print('ciao')
 ```
-
-# Lezione 04
 
 ## Introduzione al modulo PyPDF2
 
@@ -208,9 +211,7 @@ pdfInput.close()
 pdfOutput.close()
 ```
 
-![](./images/pdf-1.gif)
-
-# Lezione 05
+![](/images/python/pdf-1.gif)
 
 ## Costrutto condizionale `if...else`
 
@@ -248,7 +249,6 @@ else:
 
 Notare che per il costrutto `if` in python, la `condition` è priva di parentesi tonde `( )` comuni invece a molti altri linguaggi di programmazione; l'operatore `:` è usato come terminatore della `condition` e l'indentazione è necessaria per racchiudere la porzione di codice condizionato da `if`.
 
-# Lezione 06
 
 ## Costrutto iterativo `for`
 
@@ -350,8 +350,6 @@ for numero in range(5):
 # 4:16
 ```
 
-# Lezione 07
-
 ## PyPDF2 - Copia PDF
 
 Il seguente script prende in input un pdf "input.pdf" e ne produce una copia sul file "Output.pdf" 
@@ -381,7 +379,7 @@ pdfInput.close()
 pdfOutput.close()
 ```
 
-![](./images/pdf-2.gif)
+![](/images/python/pdf-2.gif)
 
 ## PyPDF2 - Merge All pdf
 
@@ -459,9 +457,7 @@ PDF_Destinazione.close()
 print("Finito..")
 ```
 
-![](./images/mergeAllPdf.gif)
-
-# Lezione 08
+![](/images/python/mergeAllPdf.gif)
 
 ## Liste
 
@@ -597,8 +593,6 @@ mySubList = myList[::-1]
 print(mySubList) #['cachi', 'mandarino', 'mela', 'kiwi', 'banana']
 ```
 
-# Lezione 09
-
 ## Copia di Liste
 
 Abbiamo visto nel paragrafo precedente che per la copia di liste è sufficiente utilizzare l'operatore `[:]` ma che non vale per liste annidate. In questa lezione approfondiremo l'operazione di copia di elementi.
@@ -693,10 +687,6 @@ print(myList)  #['kiwi', 'mela', [1, 2], 'cachi']
 print(myList2) #['banana', 'kiwi', 'mela', [12, 2], 'cachi']
 ```
 
-# Lezione 10
-
-## Le stringe 
-
 **Le stringhe sono un tipo di dato immutabile in python** <br>
 
 Questo significa che la copia di stringhe può essere fatta attraverso l'assegnamento tra i nomi (contrariamente a quanto accade per altri linguaggi come C++) poichè quando viene creata una copia tramite l'assegnamento non viene copiato il riferimento della stringa ma l'intero oggetto stringa.
@@ -752,8 +742,6 @@ Esiste anche una sintassi leggermente diversa:
 myList = ["dentista", "17:00"]
 print(f"Evento: {myList[0]} - Ora: {myList[1]} ") #Evento: dentista - Ora: 17:00 
 ```
-
-# Lezione 11
 
 ## PyPDF2 - Merge All pdf v2
 
@@ -812,8 +800,6 @@ PDF_Destinazione.close()
 
 print("Finito..")
 ```
-
-# Lezione 12
 
 ## Introduzione alla manipolazione dei docx
 
@@ -875,8 +861,6 @@ for p in paragrafi:
     #questo metodo su stringa genera una ripetizione 
     print("-"*50)
 ```
-
-# Lezione 13
 
 ## Python `while()`
 
@@ -996,7 +980,6 @@ E' normale chiedersi quando usare uno e quando usare l'altro.. Riporto quindi un
 - `while` loop è un ciclo indefinito. Andrebbe utilizzato quando non è noto a priori il numero di iterazioni totali
 - I comandi `break` e `continue` possono essere utilizzati indistintamente sia sul ciclo `for` che sul ciclo `while`
 
-# Lezione 14
 
 ## Esercizio Asta online v1
 
@@ -1039,15 +1022,13 @@ print("Le offerte valide sono:")
 print(offerte)
 ```
 
-![](./images/asta-01.gif)
+![](/images/python/asta-01.gif)
 
 Che cosa succede se l'utente inserisce dei valori di input non atesi? Ad esempio, invece che inserire un numero inserisce una stringa o qualche carattere non previsto?
 
-![](./images/asta-02.gif)
+![](/images/python/asta-02.gif)
 
 Vedremo nel capito successivo come trattare questi errori tramite il costrutto `try Except`
-
-# Lezione 15
 
 ## Costrutto `try Except`
 
@@ -1077,7 +1058,7 @@ while 1:
 #ValueError: invalid literal for int() with base 10: 'dd'
 ```
 
-![](./images/try-except-01.gif)
+![](/images/python/try-except-01.gif)
 
 Inserendo la stringa `"dd"` la conversione esplicita `int()` fallisce e restituisce un errore:
 
@@ -1119,9 +1100,8 @@ while 1:
     print("\nIl numero inserito è: " + str(x) + "\n")
 ```
 
-![](./images/try-except-02.gif)
+![](/images/python/try-except-02.gif)
 
-# Lezione 16
 
 ## Introduzione alle espressioni regolari con Python
 
@@ -1131,8 +1111,6 @@ Python ha un modulo integrato chiamato `re`, che può essere utilizzato per lavo
 
 
 [w3schools - Python RegEx](https://www.w3schools.com/python/python_regex.asp)
-
-# Lezione 17
 
 ## Esercizio Asta online v2
 
@@ -1181,9 +1159,7 @@ while altre_offerte:
 print(offerte)
 ```
 
-![](./images/asta-03.gif)
-
-# Lezione 18
+![](/images/python/asta-03.gif)
 
 ## Costrutto `if ... in`
 
@@ -1210,9 +1186,7 @@ else:
     print("Non è presente nessuno/a " + itemToSearch + " nella lista")
 ```
 
-![](./images/if-in.gif)
-
-# Lezione 19
+![](/images/python/if-in.gif)
 
 ## Esercizio Asta online v3
 
@@ -1262,11 +1236,9 @@ print("Le offerte valide sono:")
 print(offerte)
 ```
 
-![](./images/asta-04.gif)
+![](/images/python/asta-04.gif)
 
 Come si vede una coppia identica *utente/bit coin* viene catturata e rifiutata ma è ancora permesso che un utente possa fare più offerte
-
-# Lezione 20
 
 ## Introduzione alle Funzioni
 Le funzioni vanno definite prima di utilizzarle
@@ -1303,8 +1275,6 @@ saluta("Linus")
 # ciao: Tobias!
 # ciao: Linus!
 ```
-
-# Lezione 21
 
 ## Esercizio Asta online v4
 
@@ -1365,8 +1335,6 @@ def inserisci_offerte():
 offerte = inserisci_offerte()
 stampa_lista(offerte)
 ```
-
-# Lezione 22
 
 ## Esercizio Asta online v5
 
@@ -1489,9 +1457,7 @@ print(f"Offerta Media: {media_offerte(offerte)}")
 print(f"Offerta minima: {minimo(offerte)}")
 ```
 
-![](./images/asta-05.gif)
-
-# Lezione 23
+![](/images/python/asta-05.gif)
 
 ## Python - List Comprehension
 
@@ -1541,8 +1507,6 @@ Nel seguente esempio elenco i numeri dispari da 0 a 100 con una sola espressione
 #es: 4/2 = 2 >> 2*2 = 4 >> 4=4 
 print([x for x in range(0, 100) if x // 2 * 2 != x])
 ```
-
-# Lezione 24
 
 ## Esercizio Asta online v6
 

@@ -1,12 +1,23 @@
-# Introduzione
+---
+title: Node.js
+description: 
+icon: 'ph:code-bold'
+---
 
-![Nodejs](./images/nodejs.png)
+![Nodejs](/images/node.js/nodejs.png)
+
 
 ## Cos'è node
 
 [Nodejs](https://nodejs.org/it/) è un Javascript runtime environment, permette l'esecuzione di javascript al di fuori del browser. 
 
 Node è un'applicazione `c++` che interpreta il codice Javascript attraverso il V8 engine, un software estratto da chrome, e lo converte in linguaggio macchina.
+
+Puoi provare node.js da qui
+
+::prose-iframe{src="https://www.programiz.com/javascript/online-compiler/"}
+::
+
 
 ## Caratteristiche
 
@@ -18,6 +29,8 @@ Node è un'applicazione `c++` che interpreta il codice Javascript attraverso il 
 
 E' un'applicazione e può essere lanciata da terminale. 
 Crea un file javascript, `esempio.js` e scrivi un po' di codice.
+
+
 
 ```javascript
 const names = ["Luca", "Mario", "Giovanni", "Laura"]
@@ -32,6 +45,8 @@ Apri un terminale all'interno della cartella di progetto e lancialo con node
 ```bash
 node esempio.js
 ```
+
+
 
 # Globals
 

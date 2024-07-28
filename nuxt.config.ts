@@ -57,11 +57,11 @@ export default defineNuxtConfig({
         default: 'github-light',
         dark: 'github-dark',
       },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c++', 'cpp'],
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c++', 'cpp', 'py'],
     },
     navigation: {
       fields: ['icon'],
-    },
+    }
   },
   typescript: {
     tsConfig: {
