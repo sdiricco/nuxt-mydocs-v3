@@ -1,10 +1,14 @@
-# Raspberry pi pico e Micropython
+---
+title: Raspberry pi pico e Micropython
+description: 
+icon: 'ph:code-bold'
+---
 
-![](./images/raspberry-preview.jpg)
+![](/images/raspberry-pi-pico/raspberry-preview.jpg)
 
 ## Pinout
 
-![](./images/raspberry-pinout.png)
+![](/images/raspberry-pi-pico/raspberry-pinout.png)
 
 
 ## Strumenti necessari
@@ -15,7 +19,8 @@ In pratica dovrai collegare raspberry pi pico al PC in modalità "Mass storage" 
 
 Per collegare raspberry pi pico al PC in modalità "Mass Storage" dovrai prima premere il tasto presente sulla board poi collegare raspberry all'USB come suggerito dall'immagine
 
-<img src="./images/MicroPython-FINAL.webp" alt="" width="400">
+
+![](/images/raspberry-pi-pico/MicroPython-FINAL.webp)
 
 Se sei curioso di conoscere qualcosa di più sul formato `UF2` vai su [uf2](https://github.com/microsoft/uf2)
 
