@@ -89,4 +89,5 @@ type Color =
   | 'blue'
   | 'yellow'
   | 'violet'
-  | 'myTheme';
+  | 'myTheme'
+  | 'custom-red';

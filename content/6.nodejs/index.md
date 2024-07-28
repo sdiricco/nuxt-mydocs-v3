@@ -48,7 +48,7 @@ node esempio.js
 
 
 
-# Globals
+## Globals
 
 In node non esiste nè l'oggetto `window` nè l'oggetto `document`. Queste globali sono interpretate solo dalle web api del browser.
 
@@ -61,7 +61,7 @@ In node alcuni oggetti locali sono:
 
 Tutti gli oggetti globali li trovi su [Globals](https://nodejs.org/api/globals.html)
 
-# Moduli
+## Moduli
 
 I moduli sono pacchetti di codice javascript che permettono di organizzare ed estendere le funzionalità del software.
 Node presenta svariati moduli `built-in` che possono essere richiamati ed utilizzati. E' pratica comune inoltre scrivere moduli per oganizzare il codice a seconda delle funzionalità. In questo caso i moduli saranno semplicemente dei file Javascript organizzati a nostro piacimento. Infine è possibile estendere le funzionalità standard offerte da node attraverso l'utilizzo di pacchetti esterni scaricabili attraverso [npm](https://www.npmjs.com/), Node Package Manager.
@@ -70,7 +70,7 @@ Node presenta svariati moduli `built-in` che possono essere richiamati ed utiliz
 - moduli interni: privati, creati e utilizzati all'interno del codice
 - moduli esterni: pubblici, scaricabili tramite npm.
 
-# Moduli interni
+## Moduli interni
 
 Vediamo come si crea un modulo, come si esporta per renderlo visibile e come si importa in uno specifico modulo.
 
@@ -140,7 +140,7 @@ console.log(longNames);
 
 `require` comporta l'esecuzione di `console.log(names);` all'interno di `constants.js` e tutto il codice eseguibile.
 
-# Moduli Built-in
+## Moduli Built-in
 
 Su [Nodejs/Api](https://nodejs.org/dist/latest-v16.x/docs/api/) trovi tutte le API esposte da node con la relativa documentazione.
 
@@ -228,7 +228,7 @@ line 9: Lorem ipsum
 */
 ```
 
-# Modulo http
+## Modulo http
 
 Da [Wikipedia](https://it.wikipedia.org/wiki/Server_web), un server web è un'applicazione software che, in esecuzione su un server, è in grado di gestire le richieste di trasferimento di pagine web di un client, tipicamente un web browser. La comunicazione tra server e client avviene tramite il protocollo HTTP, che utilizza la porta TCP 80 (o 8080), o eventualmente la versione sicura HTTPS, che utilizza invece la 443. Su un server web risiedono dunque i siti web tramite hosting. L'insieme di tutti i server web interconnessi a livello mondiale dà vita al World Wide Web.
 
@@ -255,7 +255,7 @@ server.listen(8080);
 Apri da browser `http://localhost:8080/`, ti ritroverai nella pagina principale cioè nella root o home.
 Puoi provare a passare alla pagina contatti, `http://localhost:8080/contatti` o a una pagina inesistente, `http://localhost:8080/ilmioprofilo`
 
-# Moduli esterni - NPM
+## Moduli esterni - NPM
 
 [NPM](https://www.npmjs.com/), node package manager, è una repository contenente pacchetti di codice javascript scaricabili e installabili gratuitamente.
 
@@ -316,7 +316,7 @@ Puoi aprire i file `package.json`, `package-lock.json`. Troverai qualcosa come:
 
 In `node_modules` invece troverai una directory dedicata a `lodash` contenente il codice sorgente e tutte le eventuali **dipendenze** utili a `lodash` per funzionare.
 
-# Package.json
+## Package.json
 
 L'installazione di un pacchetto node comporta la creazione del file `package.json`, `package-lock.json` e la directory `node_modules`. Il `package.json` è un file importante per un progetto node, contiene tutte le informazioni necessaria allo sviluppo del progetto e alle dipendenze esterne.
 
@@ -388,7 +388,7 @@ x.y.z
 major update
 ```
 
-# Qualche comando npm
+## Qualche comando npm
 
 Vediamo una lista di comandi `npm` utili.
 
@@ -454,7 +454,7 @@ npm start
 
 verrà eseguito lo script `nodemon index.js` che lancerà lo script `index.js` con node restando in ascolto sui cambiamenti.
 
-# Event loop
+## Event loop
 
 Se vuoi sapere qualche dettaglio in più su come funziona node, ti invito a visitare code [Event Loops in NodeJS – Beginner's Guide to Synchronous and Asynchronous Code](https://www.freecodecamp.org/news/nodejs-eventloop-tutorial/) e [Concurrency model and the event loop](https://developer.mozilla.org/en-US/docs/Web/JavaScript/EventLoop?retiredLocale=it). Spesso troverai queste parole chiave:
 

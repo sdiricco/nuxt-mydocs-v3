@@ -1,6 +1,15 @@
-# Rust
+---
+title: Rust
+description: 
+icon: 'ph:code-bold'
+---
 
-![rust](./images/rust.jpg)
+![rust](/images/rust/rust.jpg)
+
+Puoi provare il codice rust su [Programmiz](https://www.programiz.com/)
+
+::prose-iframe{src="https://www.programiz.com/rust/online-compiler/"}
+::
 
 ## Installa Rust
 
@@ -12,53 +21,39 @@ Una volta installato verifica che la toolchain, il compilatore e il package mana
 - **rustc**: Rust compiler
 - **cargo**: package manager
 
-:::: code-group
-::: code-group-item rustup
-```sh
-rustup --version
-```
-:::
-::: code-group-item rustc
-```sh
-rustc --version
-```
-:::
-::: code-group-item cargo
-```sh
-cargo --version
-```
-:::
-::::
+::code-group
+  ```sh [rustup]
+  rustup --version
+  ```
+  ```sh [rustc]
+  rustc --version
+  ```
+  ```sh [cargo]
+  cargo --version
+  ```
+::
 
 ## Hello Rust!
 
 Stampa il tuo primo **Hello World** con Rust.
 
+::code-group
+  ```rust [main.rs]
+  fn main(){
+      println!("Hello World!")
+  }
+  ```
+  ```sh [compila]
+  rustc ./main.rs
+  ```
+  ```sh [esegui]
+  ./main
+  ```
+  ```sh [output]
+  Hello World
+  ```
+::
 
-:::: code-group
-::: code-group-item main.rs
-```rs
-fn main(){
-    println!("Hello World!")
-}
-```
-:::
-::: code-group-item compila
-```sh
-rustc ./main.rs
-```
-:::
-::: code-group-item esegui
-```sh
-./main
-```
-:::
-::: code-group-item output
-```sh
-Hello World
-```
-:::
-::::
 
 ## Inizializza un progetto con cargo
 
@@ -70,7 +65,7 @@ cargo init
 
 Creerà un file `Cargo.toml`
 
-```toml
+```yaml
 [package]
 name = "rustlang"
 version = "0.1.0"
@@ -174,8 +169,6 @@ pub fn run() {
 - Rust is a block-scoped language
 
 ```rust
-
-
 pub fn run() {
   let name = "Brad";
   let mut age = 37;
@@ -378,7 +371,7 @@ pub fn run() {
 
 - Used to check the condition of something and act on the result
 
-```rs
+```rust
 pub fn run() {
   let age: u8 = 22;
   let check_id: bool = true;
@@ -405,7 +398,7 @@ Used to iterate until a condition is met
 
 ### Infinite Loop
 
-```rs
+```rust
 pub fn run() {
   let mut count = 0;
 
@@ -422,7 +415,7 @@ pub fn run() {
 
 ### While Loop
 
-```rs
+```rust
 pub fn run() {
   let mut count = 0;
 
@@ -445,7 +438,7 @@ pub fn run() {
 
 ### For Range
 
-```rs
+```rust
 pub fn run() {
   // For Range
   for x in 0..100 {

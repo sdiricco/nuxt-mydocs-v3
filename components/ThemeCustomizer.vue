@@ -78,7 +78,8 @@ const allColors: Color[] = [
   'gray',
   'neutral',
   'yellow',
-  'myTheme'
+  'myTheme',
+  'custom-red'
 ];
 
 const RADII = [0, 0.25, 0.5, 0.75, 1];

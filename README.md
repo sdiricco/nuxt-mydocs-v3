@@ -119,7 +119,7 @@ Optionally, you can configure it from `nuxt.config.ts`
 }
 ```
 
-Add theme options to `theme.ts`
+Add theme options to `lib/registry/theme.ts`
 
 ```ts
 

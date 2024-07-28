@@ -57,7 +57,8 @@ export default defineNuxtConfig({
         default: 'github-light',
         dark: 'github-dark',
       },
-      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c++', 'cpp', 'py'],
+      langs: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c++', 'cpp', 'py', 'rust'],
+      preload: ['json', 'js', 'ts', 'html', 'css', 'vue', 'diff', 'shell', 'markdown', 'yaml', 'bash', 'ini', 'c++', 'cpp', 'py', 'rust'],
     },
     navigation: {
       fields: ['icon'],
