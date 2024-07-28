@@ -1,10 +1,13 @@
 ---
 title: C++
 description: C++ by examples
-icon: 'iconoir:page'
+icon: 'ph:code-bold'
 ---
 
-Raccolta di esempi in C++ ordinati secondo difficoltà
+Raccolta di esempi in C++ ordinati secondo difficoltà. Puoi compilare il codice riportato negli esempi utilizzando la piattaforma [Programiz](https://www.programiz.com/) 
+
+::prose-iframe{src="https://www.programiz.com/cpp-programming/online-compiler/" }
+::
   
 ## Area e perimetro di un rettangolo
 
@@ -14,28 +17,26 @@ Restituisce area e perimetro di un rettangolo dati base e altezza immessi da tas
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    cout << "Title: Area e perimetro di un rettangolo" << '\n'
-         << "Description: Restituisce area e perimetro di un rettangolo dati base e altezza immessi da tastiera" << '\n';
+int main() {
+  cout << "Title: Area e perimetro di un rettangolo" << '\n'
+       << "Description: Restituisce area e perimetro di un rettangolo dati "
+          "base e altezza immessi da tastiera"
+       << '\n';
 
-    double base, altezza, perimetro, area;
-    cout << '\n' << "base:";
-    cin >> base;
-    cout << "altezza:";
-    cin >> altezza;
+  double base, altezza, perimetro, area;
+  cout << '\n' << "base:";
+  cin >> base;
+  cout << "altezza:";
+  cin >> altezza;
 
-    perimetro = 2 * ( base + altezza );     //Conversione implicita 2 -> 2.0
-    area = base * altezza;
+  perimetro = 2 * (base + altezza); // Conversione implicita 2 -> 2.0
+  area = base * altezza;
 
-    cout << '\n' << "Perimetro: " << perimetro
-         << '\n' << "Area: " << area << '\n';
+  cout << '\n'
+       << "Perimetro: " << perimetro << '\n'
+       << "Area: " << area << '\n';
 }
 ```
-
-<!-- <iframe id="previewFrame" src="https://replit.com/@simodiricco91/VioletUnselfishBoard?embed=true" style="width:100%; height: 400px;"></iframe> -->
-
-
 
 ## Da intero a decine centinaia e unita'
 

@@ -1,4 +1,14 @@
-# Git
+---
+title: Git
+description: 
+icon: 'ph:code-bold'
+---
+
+
+Per fare pratica puoi usare il seguente strumento online. Usa il comando`help` per visualizzare i comandi disponibili
+
+::prose-iframe{src="https://git-school.github.io/visualizing-git/"}
+::
 
 ## Git init
 

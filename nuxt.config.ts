@@ -62,11 +62,6 @@ export default defineNuxtConfig({
     navigation: {
       fields: ['icon'],
     },
-    experimental: {
-      search: {
-        indexed: true,
-      },
-    },
   },
   typescript: {
     tsConfig: {

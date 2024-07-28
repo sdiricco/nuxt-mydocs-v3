@@ -1,12 +1,18 @@
-# Regular Expression
+---
+title: Regular Expression
+description: 
+icon: 'ph:code-bold'
+---
 
 Un' espressione regolare è una stringa di caratteri opportunamente codificata che filtra un'insieme di stringhe. E' possibile, con un'espressione regolare creare dei filtri per le ricerche di testo all'interno di un file o un determinato modello.
 
 ## Strumenti necessari
 
-Puoi imparare la sintassi delle espressioni regolari su un motore online come [RegExpr](https://regexr.com/).
+Puoi imparare la sintassi delle espressioni regolari su un motore online.
 
-![RegExpr](./images/RegExpr.png)
+::prose-iframe{src="https://regexr.com/"}
+::
+
 
 E' un ottimo strumento poichè oltre ad evidenziare nel testo l'insieme di caratteri filtrati dall'espressione regolare fornisce anche una spiegazione per ogni costrutto utilizzato nell'espressione regolare.
 

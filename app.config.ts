@@ -82,7 +82,7 @@ export default defineAppConfig({
       links: [],
     },
     search: {
-      enable: true,
+      enable: false,
       inAside: false,
     },
   },
