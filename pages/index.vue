@@ -1,13 +1,7 @@
 <template>
   <LayoutHeader />
-  <div
-    class="px-4 md:px-8 py-6"
-    :class="[config.main.padded && 'container']"
-  >
-    <ContentRenderer
-      :key="page._id"
-      :value="page"
-    />
+  <div class="px-4 md:px-8 py-6" :class="[config.main.padded && 'container']">
+    <ContentRenderer :key="page._id" :value="page" />
   </div>
   <LayoutFooter />
 </template>
