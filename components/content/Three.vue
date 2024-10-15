@@ -75,27 +75,8 @@ function init() {
 
 function onMouseMove(event) {
   event.preventDefault();
-  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
-  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-}
-
-function onMouseDown(event) {
-  event.preventDefault();
-  onMouseMove(event);
-  raycaster.setFromCamera(mouse, camera);
-  const intersected = raycaster.intersectObjects(modularGruop.children);
-  if (intersected.length > 0) {
-    cameraValue = false;
-    if (INTERSECTED !== intersected[0].object) {
-      if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-      INTERSECTED = intersected[0].object;
-      INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      INTERSECTED.material.emissive.setHex(0xffff00);
-    } else {
-      if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-      INTERSECTED = null;
-    }
-  }
+  mouse.x = (event.clientX / window.innerWidth) * 0.5 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 0.5 + 1;
 }
 
 // Funzione di animazione
@@ -184,7 +165,6 @@ onMounted(() => {
     scene.add(rectLightHelper);
 
     // Eventi mouse e resize
-    window.addEventListener('mousedown', onMouseDown, false);
     window.addEventListener('mousemove', onMouseMove, false);
     window.addEventListener('resize', () => {
       camera.aspect = window.innerWidth / window.innerHeight;

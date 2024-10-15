@@ -1,11 +1,10 @@
 ---
-title: Typescript
-description: 
 icon: 'ph:code-bold'
 ---
 
+# Typescript
 
-Da [wikipedia](https://it.wikipedia.org/wiki/TypeScript) TypeScript è un linguaggio di programmazione open source sviluppato da Microsoft. Si tratta di un Super-set di JavaScript che basa le sue caratteristiche su ECMAScript 6.
+> Da [wikipedia](https://it.wikipedia.org/wiki/TypeScript) TypeScript è un linguaggio di programmazione open source sviluppato da Microsoft. Si tratta di un Super-set di JavaScript che basa le sue caratteristiche su ECMAScript 6.
 
 Il linguaggio estende la sintassi di JavaScript in modo che qualunque programma scritto in JavaScript sia anche in grado di funzionare con TypeScript senza nessuna modifica. È stato progettato per lo sviluppo di grandi applicazioni ed è destinato a essere compilato in JavaScript per poter essere interpretato da qualunque web browser o app.
 

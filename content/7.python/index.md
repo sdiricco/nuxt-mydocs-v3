@@ -1,8 +1,8 @@
 ---
-title: Python
-description: 
 icon: 'ph:code-bold'
 ---
+
+# Python
 
 Per fare pratica con python puoi utilizzare [Programmiz](https://www.programiz.com/)
 

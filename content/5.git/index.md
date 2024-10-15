@@ -1,9 +1,8 @@
 ---
-title: Git
-description: 
 icon: 'ph:code-bold'
 ---
 
+# Git
 
 Per fare pratica puoi usare il seguente strumento online. Usa il comando`help` per visualizzare i comandi disponibili
 

@@ -1,8 +1,8 @@
 ---
-title: Rust
-description: 
 icon: 'ph:code-bold'
 ---
+
+# Rust
 
 ![rust](/images/rust/rust.jpg)
 

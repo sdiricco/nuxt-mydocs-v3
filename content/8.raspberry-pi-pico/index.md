@@ -1,8 +1,8 @@
 ---
-title: Raspberry pi pico e Micropython
-description: 
 icon: 'ph:code-bold'
 ---
+
+# Raspberry pi pico e Micropython
 
 ![](/images/raspberry-pi-pico/raspberry-preview.jpg)
 

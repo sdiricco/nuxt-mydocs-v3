@@ -1,10 +1,10 @@
 ---
-title: Regular Expression
-description: 
 icon: 'ph:code-bold'
 ---
 
-Un' espressione regolare è una stringa di caratteri opportunamente codificata che filtra un'insieme di stringhe. E' possibile, con un'espressione regolare creare dei filtri per le ricerche di testo all'interno di un file o un determinato modello.
+# Regular Expression
+
+> Un' espressione regolare è una stringa di caratteri opportunamente codificata che filtra un'insieme di stringhe. E' possibile, con un'espressione regolare creare dei filtri per le ricerche di testo all'interno di un file o un determinato modello.
 
 ## Strumenti necessari
 

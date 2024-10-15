@@ -1,10 +1,10 @@
 ---
-title: C++
-description: C++ by examples
 icon: 'ph:code-bold'
 ---
 
-Raccolta di esempi in C++ ordinati secondo difficoltà. Puoi compilare il codice riportato negli esempi utilizzando la piattaforma [Programiz](https://www.programiz.com/) 
+# c++
+
+> Raccolta di esempi in C++ ordinati secondo difficoltà. Puoi compilare il codice riportato negli esempi utilizzando la piattaforma [Programiz](https://www.programiz.com/) 
 
 ::prose-iframe{src="https://www.programiz.com/cpp-programming/online-compiler/" }
 ::

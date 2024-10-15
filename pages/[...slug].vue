@@ -12,15 +12,6 @@
         <div class="mx-auto w-full min-w-0">
           <LayoutBreadcrumb v-if="page?.body && config.main.breadCrumb" class="mb-4" />
 
-          <!-- <div v-if="config.main.showTitle && page?.title" class="space-y-2 mb-6">
-            <ProseH1>
-              {{ page?.title }}
-            </ProseH1>
-            <p class="text-lg text-muted-foreground">
-              {{ page?.description }}
-            </p>
-          </div> -->
-
           <Alert v-if="!page?.body || page?.body?.children?.length === 0" title="Empty Page" icon="lucide:circle-x">
             Start writing in <ProseCodeInline>content/{{ page?._file }}</ProseCodeInline> to see this page taking shape.
           </Alert>
